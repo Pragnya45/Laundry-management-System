@@ -30,12 +30,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP server address
         $mail->SMTPAuth = true;
-        $mail->Username = 'dro.odisha.official@gmail.com'; // Replace with your email address
-        $mail->Password = 'ggogxpfbetqgqbsz'; // Replace with your email password
+        $mail->Username = ''; // Replace with your SMTP email address
+        $mail->Password = ''; // Replace with your SMTP email password
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587; // Replace with your SMTP port
 
-        $mail->setFrom('dro.odisha.official@gmail.com', 'PragnyasLaundry'); // Replace with your email address and name
+        $mail->setFrom('', 'PragnyasLaundry'); // Replace with your email address and name
         $mail->addAddress($email); // Recipient's email address
 
         $mail->Subject = 'Password Reset';
